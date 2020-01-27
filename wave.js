@@ -5,13 +5,13 @@ function wave(words) {
     if (words.length === 0) {
         return "The string can't be empty!";
     }
+    if (words.toLowerCase() !== words ) {
+        return "The string should be in lower register";
+    }
     let arrayOfWords = [];
     words = words.trim();
     let wordExp = /[a-z]/;
     let arrayOfLetters = words.split('');
-    if (words.toLowerCase() !== words ) {
-        return "The string should be in lower register";
-    }
     if (arrayOfLetters.every(elem => elem.match(wordExp) === null)) {
         return words;
     }
