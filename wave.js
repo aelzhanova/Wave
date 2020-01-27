@@ -1,11 +1,14 @@
 function wave(words) {
+    if (typeof words !== 'string') {
+        return ("Incorrect type of string - string is null or undefined")
+    }
+    if (words.length === 0) {
+        return("The string can't be empty!");
+    }
     let arrayOfWords = [];
     words = words.trim();
     let wordExp = /[a-z]/;
     let arrayOfLetters = words.split('');
-    if (words.length === 0) {
-        return("The string can't be empty!");
-    }
     if (words.toLowerCase() !== words ) {
         return("The string should be in lower register");
     }
