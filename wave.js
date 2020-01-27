@@ -1,6 +1,6 @@
 function wave(words) {
     if (typeof words !== 'string') {
-        return "Incorrect type of string - string is null or undefined"
+        return "Incorrect type of string - string is null or undefined";
     }
     if (words.length === 0) {
         return "The string can't be empty!";
