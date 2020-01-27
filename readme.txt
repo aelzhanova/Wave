@@ -1,0 +1,10 @@
+wave("test") => ["Test", "tEst", "teSt", "tesT"]
+wave("test1") => ["Test1", "tEst1", "teSt1", "tesT1"]
+wave("    test    ") => ["Test", "tEst", "teSt", "tesT"]
+wave("let it snow") => ["Let it snow", "lEt it snow", "leT it snow", "let It snow", "let iT snow", "let it Snow", "let it sNow", "let it snOw", "let it snoW"]
+wave("ha-ha") => ["Ha-ha", "hA-ha", "ha-Ha", "ha-hA"]
+wave("---") => ["---"]
+wave("1234") => ["1234"]
+wave("1234+") => ["1234+"]
+wave() => The string can't be empty!
+wave("tEst") => The string should be in lower register!
